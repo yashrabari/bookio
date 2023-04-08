@@ -1,0 +1,154 @@
+/*------------------- content layout -----------------*/
+@media (max-width:$screen-sm-max){
+.content-icon-box{
+	.elementor-icon-box-wrapper{
+		flex-wrap:wrap;
+		justify-content:center;
+		text-align:center;
+		>*{
+			width:100%;
+			text-align:center;
+		}
+		.elementor-icon-box-icon{
+			margin:0 0 10px !important;
+			justify-content:center;
+			@media (max-width:$screen-xs-max){
+				margin:0 !important;
+				display:none;
+			}
+		}
+	}
+}
+}
+.policy-left{
+	.elementor-icon-box-wrapper{
+		text-align:left !important;
+		display:flex;
+		align-items:center;
+		.elementor-icon-box-icon{
+			@include rtl-margin-right(10px !important);
+		}
+	}
+}
+.overflow-hidden{
+	overflow:hidden;
+	>div{
+		overflow:hidden;
+	}
+}
+@media (max-width:$screen-xs-max){
+	.box-icon-xs-left{
+		.elementor-widget-container .elementor-icon-box-wrapper{
+			display: flex;
+			@include rtl-text-align-left();
+			align-items:center;
+			.elementor-icon-box-icon{
+				@include rtl-margin-right(20px !important);
+			}
+		}
+	}
+}
+.height-100{
+	height:100%;
+	>div{
+		height:100%;
+	}
+}
+.newlest-1{
+	.wpbingo-newsletter.newsletter-default .content-newsletter{
+		input[type="email"]{
+			background:transparent;
+			border-bottom:2px solid $white;
+			padding:0;
+			height:35px;
+			line-height:35px;
+			color:$white;
+			@include placeholder($white);
+		}
+		.clearfix{
+			background:transparent;
+			padding:0;
+			height:auto;
+			line-height:1;
+			&:before{
+				display:none;
+			}
+		}
+		input[type="submit"]{
+			position:relative;
+			font-size:12px;
+			color:$white;
+			text-transform: uppercase;
+			border-bottom:2px solid $white;
+			@include border-radius(0);
+			height:35px;
+			line-height:35px;
+			padding:0 15px;
+			letter-spacing:1.5px;
+			font-weight:700;
+			@include rtl-margin-left(7px);
+			&:hover{
+				color:$theme-color;
+				border-color:$theme-color;
+			}
+		}
+	}
+}
+.text-block-1{
+	a{
+		display:inline-block;
+		border-bottom:2px solid #f1592b;
+	}
+}
+/*------------------- end content layout -----------------*/
+
+/*------------------- Other layout -----------------*/
+.marginright-auto{
+	>.elementor-container{
+		margin-left:0 !important;
+	}
+}
+.marginleft-auto{
+	>.elementor-container{
+		margin-right: 0 !important;
+	}
+}
+@media (min-width:$screen-sm-max){
+	.marginright-sm-auto{
+		>.elementor-container{
+			margin-left:0 !important;
+		}
+	}
+	.marginleft-sm-auto{
+		>.elementor-container{
+			margin-right: 0 !important;
+		}
+	}
+}
+@media (max-width:$screen-sm-max){
+	.marginright-xs-auto{
+		>.elementor-container{
+			margin-left:0 !important;
+		}
+	}
+	.marginleft-xs-auto{
+		>.elementor-container{
+			margin-right: 0 !important;
+		}
+	}
+}
+.elementor-icon-box-title{
+	margin-top:0;
+}
+.elementor-widget-icon-box:hover{
+	.svg-icon path{
+		animation: svg-animation 1.5s linear forwards;
+	}
+}
+/*------------------- End layout -----------------*/
+.elementor-section:not(.elementor-section-full_width,.elementor-inner-section){
+	@media (max-width:1770px) and (min-width:$screen-md-max){
+		padding-left: 15px ;
+		padding-right: 15px ;
+	}
+}

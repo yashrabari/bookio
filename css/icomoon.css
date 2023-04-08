@@ -1,0 +1,72 @@
+@font-face{
+  font-family:icomoon;
+  src:url(../fonts/icomoon.eot?fzv6fp);
+  src:url(../fonts/icomoon.eot?fzv6fp#iefix) format("embedded-opentype"),url(../fonts/icomoon.ttf?fzv6fp) format("truetype"),url(../fonts/icomoon.woff?fzv6fp) format("woff"),url(../fonts/icomoon.svg?fzv6fp#icomoon) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-display:block;
+}
+
+[class*=" icon-"],[class^=icon-]{
+  font-family:icomoon;
+  speak:none;
+  font-style:normal;
+  font-weight:400;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+
+
+.icon-ranking:before{
+  content:"\e90c";
+}
+.icon-new:before{
+  content:"\e90d";
+}
+.icon-trendy:before{
+  content:"\e90e";
+}
+.icon-ribbon:before{
+  content:"\e90f";
+}
+.icon-comment:before{
+  content:"\e90b";
+}
+.icon-mail:before{
+  content:"\e90a";
+}
+.icon-quote:before{
+  content:"\e909";
+}
+.icon-arrow-left:before{
+  content:"\e906";
+}
+.icon-arrow-right:before{
+  content:"\e907";
+}
+.icon-star:before{
+  content:"\e908";
+}
+.icon-loupe:before{
+  content:"\e905";
+}
+.icon-large-paper-bag:before{
+  content:"\e900";
+}
+.icon-love:before{
+  content:"\e901";
+}
+.icon-placeholder:before{
+  content:"\e902";
+}
+.icon-user:before{
+  content:"\e903";
+}
+.icon-view:before{
+  content:"\e904";
+}
+

@@ -1,0 +1,60 @@
+// Support for RTL (Right to Left) & non-latin fonts
+
+.rtl{
+	direction: rtl;
+	@media (min-width: 1200px){
+		.col-xl-2-4 {
+			width: 20%;
+		}
+	}
+	.widget.widget_categories ul li:hover{
+		a, span{
+			&:before{
+				@include transform( rotate(180deg) );
+			}
+		}
+	}
+	.bwp-top-bar .display li{
+		&:last-child{
+			margin-right: 15px;
+		}
+		&:first-child{
+			margin-right: 0;
+		}
+	}
+	.mini-cart .cart-popup{
+		right: auto !important;
+		left: -12px !important;
+	}
+	.bwp-top-bar .display li:first-child{
+		margin-right: 10px;
+	}
+	.bwp-header .block-top-link > .widget .widget-custom-menu > div{
+		left: auto;
+		right: 0;
+	}
+	.entry-meta > *:not(.sticky-post){
+		&:first-child{
+			padding-left: 14px;
+			padding-right: 0;
+		}
+		&:last-child{
+			padding-left: 0;
+			padding-right: 14px;
+		}
+	}
+	.bestseller-product .slick-arrow.fa-angle-left, .featured-product .slick-arrow.fa-angle-left{
+		left: 0;
+		right: auto;
+	}
+	.bestseller-product .slick-arrow.fa-angle-right, .featured-product .slick-arrow.fa-angle-right{
+		left: 35px;
+		right:auto;
+	}
+	.bwp-top-bar .woocommerce-ordering .pwb-dropdown-menu{
+		left:0 !important;
+	}
+	.bwp_product_list.scroll{
+		direction: ltr;
+	}
+}
